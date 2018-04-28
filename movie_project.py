@@ -66,8 +66,8 @@ y = df.isSuccessful
 
 X_train = X.head(3362)
 y_train = y.head(3362)
-X_test = X.head(1681)
-y_test = y.head(1681)
+X_test = X.tail(1681)
+y_test = y.tail(1681)
 
 #Decision Tree
 from sklearn import tree
@@ -83,8 +83,15 @@ from sklearn import linear_model
 
 clf = linear_model.SGDClassifier()
 clf.fit(X_train, y_train)
-y_predict2 = model.predict(X_test)
+y_predict2 = clf.predict(X_test)
+print (accuracy_score(y_test, y_predict2))
 
-print (y_test)
-print (y_predict1[0:10])
-print (y_predict2[0:10])
+#Random Forest
+
+from sklearn.ensemble import RandomForestClassifier
+rf = RandomForestClassifier(n_jobs=, random_state=0)
+rf.fit(X_train, y_train)
+y_predict3 = rf.predict(X_test)
+print (accuracy_score(y_test, y_predict3))
+
+
