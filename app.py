@@ -3,6 +3,7 @@ import os
 import numpy as np
 from os.path import abspath, dirname
 import pandas as pd
+from movie_project import apply_classification
 
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -21,7 +22,25 @@ def visualization():
 
 @app.route('/predict/', methods =['POST', 'GET'])
 def prediction():
+    if request.method == "POST":
+        return redirect(url_for('upload'))
     return render_template('predict.html')
+
+@app.route('/upload/', methods=['POST', 'GET'])
+def upload():
+    if request.method == 'POST':
+        budget = request.form['budget']
+        dfl = request.form['dfl']
+        afl1 = request.form['afl1']
+        afl2 = request.form['afl2']
+        duration = request.form['duration']
+        df = pd.read_csv('moviewprofit.csv')
+        answer = apply_classification(df, budget, dfl, afl1, afl2, duration)
+        print (answer)
+        return render_template('result.html', **locals())
+    else:
+        return render_template('predict.html')
+
 
 if __name__ == '__main__':
   port = int(os.environ.get('PORT', 9999))
