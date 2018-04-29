@@ -87,11 +87,31 @@ y_predict2 = clf.predict(X_test)
 print (accuracy_score(y_test, y_predict2))
 
 #Random Forest
-
 from sklearn.ensemble import RandomForestClassifier
-rf = RandomForestClassifier(n_jobs=, random_state=0)
+rf = RandomForestClassifier(n_jobs=2, random_state=0)
 rf.fit(X_train, y_train)
 y_predict3 = rf.predict(X_test)
 print (accuracy_score(y_test, y_predict3))
 
+#Ridge Classifier
+from sklearn.linear_model import RidgeClassifier
+
+ridge = RidgeClassifier(alpha=1.0)
+ridge.fit(X_train, y_train)
+y_predict4 = ridge.predict(X_test)
+print (accuracy_score(y_test, y_predict4))
+
+# Neural Networks
+from sklearn.neural_network import MLPClassifier
+neural_network = MLPClassifier()
+neural_network.fit(X_train, y_train)
+y_predict5 = neural_network.predict(X_test)
+print (accuracy_score(y_test, y_predict5))
+
+#XGBoost
+from xgboost import XGBClassifier
+xgboost = XGBClassifier()
+xgboost.fit(X_train, y_train)
+y_predict6 = xgboost.predict(X_test)
+print (accuracy_score(y_test, y_predict6))
 

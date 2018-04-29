@@ -12,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Blockbuster_DS3001_Project$movie_project__1_.coverage" NAME="movie_project (1) Coverage Results" MODIFIED="1524955666280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Blockbuster_DS3001_Project$movie_project__1_.coverage" NAME="movie_project (1) Coverage Results" MODIFIED="1524969194459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Blockbuster_DS3001_Project$movie_project.coverage" NAME="movie_project Coverage Results" MODIFIED="1524954579585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
@@ -20,20 +20,11 @@
       <file leaf-file-name="movie_project.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/movie_project.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="90" column="24" lean-forward="true" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
+            <state relative-caret-position="419">
+              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
               <folding>
                 <element signature="e#113#132#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stochastic_gradient.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/SeeYouMonday-ogzSfu8y/lib/python3.6/site-packages/sklearn/linear_model/stochastic_gradient.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3290">
-              <caret line="138" column="25" selection-start-line="138" selection-start-column="25" selection-end-line="138" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -220,15 +211,15 @@
     </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/SeeYouMonday-ogzSfu8y/lib/python3.6/site-packages/sklearn/linear_model/stochastic_gradient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3290">
-          <caret line="138" column="25" selection-start-line="138" selection-start-column="25" selection-end-line="138" selection-end-column="25" />
+        <state relative-caret-position="158">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movie_project.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="90" column="24" lean-forward="true" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
+        <state relative-caret-position="419">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
           <folding>
             <element signature="e#113#132#0" expanded="true" />
           </folding>
