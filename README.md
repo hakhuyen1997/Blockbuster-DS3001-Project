@@ -1,6 +1,6 @@
 # Movie Box Office Analysis and Prediction
-## Kyra Bresnahan, Khuyen Cao, Fareya Ikram, Yeggi Lee
-## DS3001 Foundations of Data Science-Team Blockbusters
+ Kyra Bresnahan, Khuyen Cao, Fareya Ikram, Yeggi Lee
+ DS3001 Foundations of Data Science-Team Blockbusters
 
 ## 1 INTRODUCTION AND MOTIVATION
 In February 2018, the newest movie of the Marvel Cinematic Universe, Black Panther demolished box office records, staying at the top for a consecutive six weeks and bringing in hundreds of millions of dollars. In fact, it currently sits as the highest-rated Marvel movie of all-time with a rating of 97% in Rotten Tomatoes [1]. This unprecedented success leads to the following questions: What makes a movie successful? Which common factors correlate to successful blockbusters or total flops? In this project, we hope to explore and answer some of these questions.
