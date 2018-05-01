@@ -42,12 +42,12 @@ def apply_classification(df, budget, dfl, afl1, afl2, duration):
     X_test['actor_1_facebook_likes'] = float(afl1)
     X_test['duration'] = float(duration)
     X_test['actor_2_facebook_likes'] = float(afl2)
-    X_test['cast_total_facebook_likes'] = df.median()['cast_total_facebook_likes']
-    X_test['actor_3_facebook_likes'] = df.median()['actor_3_facebook_likes']
+    X_test['cast_total_facebook_likes'] = df.min()['cast_total_facebook_likes']
+    X_test['actor_3_facebook_likes'] = df.min()['actor_3_facebook_likes']
     print (X_test)
     result_predict = apply_xgboost(X_test, df)
-    if result_predict == 0:
-        return "NO"
+    print (result_predict)
+    if result_predict == '0':        return "NO"
     else:
         return "YES"
 

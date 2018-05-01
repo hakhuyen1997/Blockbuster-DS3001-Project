@@ -52,7 +52,7 @@ def isSuccessful(row):
         val = '0'
     return val
 df['isSuccessful'] = df.apply(isSuccessful, axis=1)
-#print (df.head())
+print (df.head())
 
 #Apply different classification models
 X = df[['budget', 'director_facebook_likes', 'actor_1_facebook_likes', 'duration', 'cast_total_facebook_likes', 'actor_2_facebook_likes', 'actor_3_facebook_likes']]
