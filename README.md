@@ -29,6 +29,8 @@ References
 3) check out visualization and different type of classification methods in visualization.py
 3) run app.py to run the local host of the web application
 
+Again, website is also hosted on heroku at [https://ds3001-blockbuster.herokuapp.com](https://ds3001-blockbuster.herokuapp.com)
+
 [1] Cole, Joe Robert, and Ryan Coogler. “Black Panther.”  (2018) - Rotten Tomatoes, 5 Apr. 2018, www.rottentomatoes.com/m/black_panther_2018/.
 [2] Sun, Chaun.  “IMDB 5000 Movie Dataset.”  (2016) - Data.World, 8 Apr. 2018, https://data.world/popculture/imdb-5000-movie-dataset
 
