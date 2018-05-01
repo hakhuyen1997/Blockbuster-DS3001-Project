@@ -10,7 +10,7 @@ import pandas as pd
 from xgboost import XGBClassifier
 
 def isSuccessful(row):
-    if row['profit'] >= 3.0:
+    if row['profit'] >= 6.59:
         val = '1'
     else:
         val = '0'
@@ -47,7 +47,8 @@ def apply_classification(df, budget, dfl, afl1, afl2, duration):
     print (X_test)
     result_predict = apply_xgboost(X_test, df)
     print (result_predict)
-    if result_predict == '0':        return "NO"
+    if result_predict == '0':
+        return "NO"
     else:
         return "YES"
 

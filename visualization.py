@@ -7,7 +7,7 @@ import missingno as msno
 df = pd.read_csv('moviewprofit.csv')
 
 # Missing columns visualizations using bar chart
-print (df.isnull().sum().sort_values())
+#print (df.isnull().sum().sort_values())
 df.isnull().sum().sort_values().plot.bar()
 
 # Missing columns visualization using missingno and null values correlation heat
@@ -46,13 +46,14 @@ df = df.fillna(df.median())
 
 #Create column decide succesfulness based on profit
 def isSuccessful(row):
-    if row['profit'] >= 3.0:
+    if row['profit'] >= 6.59:
         val = '1'
     else:
         val = '0'
     return val
 df['isSuccessful'] = df.apply(isSuccessful, axis=1)
-print (df.head())
+
+#print (df.head())
 
 #Apply different classification models
 X = df[['budget', 'director_facebook_likes', 'actor_1_facebook_likes', 'duration', 'cast_total_facebook_likes', 'actor_2_facebook_likes', 'actor_3_facebook_likes']]
@@ -107,6 +108,7 @@ from xgboost import XGBClassifier
 xgboost = XGBClassifier()
 xgboost.fit(X_train, y_train)
 y_predict6 = xgboost.predict(X_test)
-for item in y_predict6:
-    print (item)
+# for item in y_predict6:
+#     print (item)
 print (accuracy_score(y_test, y_predict6))
+
