@@ -26,6 +26,10 @@ def prediction():
         return redirect(url_for('upload'))
     return render_template('predict.html')
 
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
 @app.route('/upload/', methods=['POST', 'GET'])
 def upload():
     if request.method == 'POST':

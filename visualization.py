@@ -29,12 +29,15 @@ df.groupby('director_name').gross.mean().sort_values(ascending=False).nlargest(1
 df_director = df.groupby('director_name').gross.sum().sort_values(ascending=False).nlargest(10)
 df.groupby('director_name').gross.sum().sort_values(ascending=False).nlargest(10)
 # Top actor
+df_actor1 = df.groupby('actor_1_name').gross.sum().sort_values(ascending=False).nlargest(10)
+df_actor1.to_csv('actor1.csv')
 df.groupby('actor_1_name').gross.mean().sort_values(ascending=False).nlargest(10)
-df.groupby('actor_1_name').gross.sum().sort_values(ascending=False).nlargest(10)
 df.groupby('actor_2_name').gross.mean().sort_values(ascending=False).nlargest(10)
-df.groupby('actor_2_name').gross.sum().sort_values(ascending=False).nlargest(10)
+df_actor2 = df.groupby('actor_2_name').gross.sum().sort_values(ascending=False).nlargest(10)
+df_actor2.to_csv('actor2.csv')
 df.groupby('actor_3_name').gross.mean().sort_values(ascending=False).nlargest(10)
-df.groupby('actor_3_name').gross.sum().sort_values(ascending=False).nlargest(10)
+df_actor3 = df.groupby('actor_3_name').gross.sum().sort_values(ascending=False).nlargest(10)
+df_actor3.to_csv('actor3.csv')
 
 #Preprocessing and handling missing values
 df = df.fillna(df.median())
@@ -104,4 +107,6 @@ from xgboost import XGBClassifier
 xgboost = XGBClassifier()
 xgboost.fit(X_train, y_train)
 y_predict6 = xgboost.predict(X_test)
+for item in y_predict6:
+    print (item)
 print (accuracy_score(y_test, y_predict6))
