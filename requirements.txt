@@ -1,4 +1,4 @@
-Flask==0.12.2
+Flask==1.0
 Jinja2==2.10
 matplotlib==2.2.2
 missingno==0.4.0
